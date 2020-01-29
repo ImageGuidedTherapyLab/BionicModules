@@ -30,6 +30,8 @@ proc ModulesHelp { } {
         puts stderr "\tThis module loads miniconda$version for use with Keras $kerasversion TF $tfversion \n"
 
         puts stderr "\tminiconda - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh;  bash Miniconda3-latest-Linux-x86_64.sh -p $conda_dir -b -s" 
+        puts stderr "\tgcc        - sudo apt-get install gcc-4.8 g++-4.8                       " 
+        puts stderr "\tpip        - conda install python=3.6.10  "
         puts stderr "\tcondaforge - conda config --add channels conda-forge ; conda config --set channel_priority strict "
         puts stderr "\tpip        - conda install pip cudatoolkit=9 cudatoolkit-dev=9 cudnn  bazel=$bazelversion numpy nccl=2.4.6.1 "
         puts stderr "\ttensorflow - git clone https://github.com/tensorflow/tensorflow.git ; cd tensorflow ; git checkout r$tfversion ; ./configure    "
@@ -137,7 +139,7 @@ prepend-path   PATH             $conda_dir/bin
 ## Do you want to use clang as CUDA compiler? [y/N]:
 ## nvcc will be used as CUDA compiler.
 ## 
-## Please specify which gcc should be used by nvcc as the host compiler. [Default is /usr/bin/gcc]:
+## Please specify which gcc should be used by nvcc as the host compiler. [Default is /usr/bin/gcc]: /usr/bin/gcc-4.8
 ## 
 ## 
 ## Do you wish to build TensorFlow with MPI support? [y/N]:
