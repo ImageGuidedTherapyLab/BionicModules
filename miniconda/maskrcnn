@@ -50,7 +50,6 @@ prepend-path   PATH             $conda_dir/bin
 ## You have bazel 0.15.2- (@non-git) installed.
 ## Please specify the location of python. [Default is /opt/apps/miniconda/maskrcnn/bin/python]:
 ## 
-## 
 ## Found possible Python library paths:
 ##   /opt/apps/miniconda/maskrcnn/lib/python3.6/site-packages
 ## Please input the desired Python library path to use.  Default is [/opt/apps/miniconda/maskrcnn/lib/python3.6/site-packages]
@@ -87,33 +86,25 @@ prepend-path   PATH             $conda_dir/bin
 ## 
 ## Please specify the CUDA SDK version you want to use. [Leave empty to default to CUDA 9.0]: 9.1
 ## 
-## 
 ## Please specify the location where CUDA 9.1 toolkit is installed. Refer to README.md for more details. [Default is /usr/local/cuda]: /usr/local/cuda-9.1
-## 
 ## 
 ## Please specify the cuDNN version you want to use. [Leave empty to default to cuDNN 7.0]:
 ## 
-## 
 ## Please specify the location where cuDNN 7 library is installed. Refer to README.md for more details. [Default is /usr/local/cuda-9.1]:
-## 
 ## 
 ## Do you wish to build TensorFlow with TensorRT support? [y/N]:
 ## No TensorRT support will be enabled for TensorFlow.
 ## 
 ## Please specify the NCCL version you want to use. If NCCL 2.2 is not installed, then you can use version 1.3 that can be fetched automatically but it may have worse performance with multiple GPUs. [Default is 2.2]:
 ## 
-## 
 ## Please specify the location where NCCL 2 library is installed. Refer to README.md for more details. [Default is /usr/local/cuda-9.1]:
-## 
 ## 
 ## Invalid path to NCCL 2 toolkit, /usr/local/cuda-9.1/lib/libnccl.so.2 or /usr/local/cuda-9.1/include/nccl.h not found. Please use the O/S agnostic package of NCCL 2
 ## Please specify the NCCL version you want to use. If NCCL 2.2 is not installed, then you can use version 1.3 that can be fetched automatically but it may have worse performance with multiple GPUs. [Default is 2.2]: 1.3
 ## 
-## 
 ## Please specify a list of comma-separated Cuda compute capabilities you want to build with.
 ## You can find the compute capability of your device at: https://developer.nvidia.com/cuda-gpus.
 ## Please note that each additional compute capability significantly increases your build time and binary size. [Default is: 6.1]
-## 
 ## 
 ## Do you want to use clang as CUDA compiler? [y/N]:
 ## nvcc will be used as CUDA compiler.
