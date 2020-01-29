@@ -12,7 +12,7 @@ proc ModulesHelp { } {
         puts stderr "\tminiconda - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh;  bash Miniconda3-latest-Linux-x86_64.sh "
         puts stderr "\tpip        - conda install pip cudatoolkit  cudnn  bazel==0.24.1 numpy                                                          "
         puts stderr "\ttensorflow - git clone https://github.com/tensorflow/tensorflow.git ; cd tensorflow ; git checkout r$tfversion ; ./configure    "
-        puts stderr "\ttensorflow - bazel build --config=opt --config=cuda  //tensorflow/tools/pip_package:build_pip_package                           "
+        puts stderr "\ttensorflow - bazel build --config=noaws   --config=nogcp   --config=nohdfs  --config=noignite --config=nokafka --config=opt --config=cuda  //tensorflow/tools/pip_package:build_pip_package                           "
         puts stderr "\ttensorflow - pip install keras==$kerasversion nibabel                                                                           "
         puts stderr "\ttensorflow - conda install matplotlib jupyter notebook pandas scikit-learn scikit-image                                         "
         puts stderr "\ttheano     - conda install theano pygpu                                                                                         "
